@@ -1,5 +1,7 @@
 function [eig_face] = eigenfaces(C,k)
-%% returns eigenfaces 
+%% returns top K eigenfaces
+%% input - covariance matrix C, num of vectors k
+%% output - lots of eigenfaces in a matrix (columns are reshaped faces)
 
 % load or calculate eigenvalues
 if ~exist('eig.mat')
